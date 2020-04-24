@@ -1,13 +1,16 @@
-def prime?(number)
-    if number <= 3
-      return true
-    elsif number % 3 == 0
+def prime?(n)
+    if n <= 1
       return false
-    elsif number % 2 == 0
-      return false
-    else
+
+    elsif n <= 3
       return true
-    end
-  end
-end
     
+    else
+    i = 2
+    while i*i <= n
+        if n % i == 0
+           return false
+        i = i + 1
+    return true
+    end
+end
