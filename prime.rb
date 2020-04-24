@@ -5,7 +5,7 @@ def prime?(n)
  
  real_factors = factors.pop
  
- if real_factors.any?{|number| n % number ==  0}
+ if real_factors.any?{|number| n % number == 0}
     return false
     
  else
