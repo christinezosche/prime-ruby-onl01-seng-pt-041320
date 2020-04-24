@@ -1,5 +1,7 @@
 def prime?(n)
- (n).abs
+ if n <= 0
+   return false
+ end
  factors = (2..n).to_a
  
  factors.pop
