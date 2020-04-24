@@ -1,5 +1,5 @@
 def prime?(n)
-
+ (n).abs
  factors = (2..n).to_a
  
  factors.pop
