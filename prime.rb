@@ -1,9 +1,9 @@
 def prime?(n)
  if n <= 0
    return false
- elsif n = 1
+ elsif n == 1
    return false
- elsif n = 2
+ elsif n == 2
    return true
    
  else
