@@ -3,9 +3,9 @@ def prime?(n)
  
  factors.to_a
  
- real_factors = factors.pop
+ factors.pop
  
- if real_factors.any?{|number| n % number == 0}
+ if factors.any?{|number| n % number == 0}
     return false
     
  else
