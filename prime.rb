@@ -1,11 +1,11 @@
 def prime?(n)
- factors = [2..n*n]
+ factors = (2..n*n)
  
  factors.to_a
  
- factors.pop
+ real_factors = factors.pop
  
- if factors.any?{|number| n % number ==  0}
+ if real_factors.any?{|number| n % number ==  0}
     return false
     
  else
