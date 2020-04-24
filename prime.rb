@@ -3,10 +3,8 @@ def prime?(n)
  
  factors.pop
  
- if factors.any?{|number| 
-   n % number == 0
+ if factors.any?{|number| n % number == 0}
    return false
-   end
     
  else
     return true
