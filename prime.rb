@@ -3,6 +3,8 @@ def prime?(n)
    return false
  elsif n = 1
    return false
+ elsif n = 2
+   return true
  else
   factors = (2..n).to_a
  
