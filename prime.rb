@@ -4,3 +4,4 @@ def prime?(n)
  factors.pop
  factors.collect do |number|
    n % number ==  0
+ 
