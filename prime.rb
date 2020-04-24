@@ -1,7 +1,5 @@
 def prime?(n)
- factors = (2..n*n)
- 
- factors.to_a
+ factors = (2..n*n).to_a
  
  factors.pop
  
