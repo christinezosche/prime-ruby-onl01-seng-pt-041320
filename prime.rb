@@ -1,16 +1,19 @@
 def prime?(n)
  if n <= 0
    return false
- end
- factors = (2..n).to_a
+ if n = 1
+   return false
+ else
+  factors = (2..n).to_a
  
- factors.pop
+  factors.pop
  
- if factors.any?{|number| n % number == 0}
+  if factors.any?{|number| n % number == 0}
    return false
     
- else
+  else
     return true
- end  
+  end 
+ end
 end
  
