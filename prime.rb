@@ -6,11 +6,11 @@ def prime?(n)
       return true
     
     else
-    i = 2
-    while i*i <= n
+      i = 2
+      while i*i <= n
         if n % i == 0
            return false
         i = i + 1
-    return true
+      return true
     end
 end
